@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+
+    <img src="logo.svg" width=7%>
+    <h1>Checkout form</h1>
+    Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+    
+    <form action="save_ok.php">
+
+        <hr>
+
+        <h1>Billing address</h1>
+        <label for="fname">First name</label> <label for="lname">Last name</label> <br>
+        <input type="text" id="fname" name="fname" required> <input type="text" id="lname" name="lname" required> <br>
+
+        <label for="uname">Username</label> <br>
+        <div>@<input type="text" id="uname" name="uname" placeholder="Username" required></div>
+
+        <label for="email">Email <span>Optional</span></label> <br>
+        <input type="text" id="email" name="email" placeholder="you@example.com"> <br>
+
+        <label for="address1">Address</label> <br>
+        <input type="text" id="address1" name="address1" placeholder="1234 Main St" required> <br>
+
+        <label for="address2">Address 2 <span>Optional</span></label> <br>
+        <input type="text" id="address2" name="address2" placeholder="Apartment or suite"> <br>
+
+        <label for="country">Country</label> <label for="city">City</label>  <label for="zip">Zip</label> <br>
+        <select name = "country" id="country">
+            <option value="">Choose...</option>
+            <option value = "1">South Korea </option>
+            <option value = "2">Japan </option>
+            <option value = "3">China </option>
+        </select>
+        <select name = "city" id="city">
+            <option value="">Choose...</option>
+            <optgroup label = "South Korea">
+                <option value = "seoul">Seoul </option>
+                <option value = "pohang">Pohang </option>
+                <option value = "busan">Busan </option>
+            </optgroup>
+        </select>
+        <input type="text" id="zip" name="zip" required> <br>
+
+        <hr>
+
+        <input type="checkbox" id="saveadd" name="saveadd"> Shipping address is the same as my billing address <br>
+        <input type="checkbox" id="saveinf" name="saveinf"> Save this information for next time <br>
+        
+        <hr>
+
+        <label for="fromdate">From</label> <label for="todate">To</label> <br>
+        <input type="date" min="2019-01-01" max="2020-12-31" id="fromdate" name="fromdate"> <input type="date" min="2019-01-01" max="2020-12-31" id="todate" name="todate">
+
+        <hr>
+
+        <h1>Payment</h1>
+        <input type="radio" id="credit" name="pay" value="credit" checked> Credit card <br>
+        <input type="radio" id="debit" name="pay" value="debit"> Debit card <br>
+        <input type="radio" id="paypal" name="pay" value="paypal"> PayPal <br>
+
+        <label for="cname">Name on card</label> <label for="cardnum">Credit card number</label> <br>
+        <input type="text" id="cname" name="cname" required> <input type="text" id="cardnum" name="cardnum" required> <br>
+        <span>Full name as displayed on card</span> <br>
+
+        <label for="exp">Expiration</label> <label for ="cvv">CVV</label> <br>
+        <input type="text" id="exp" name="exp" required> <input type="text" id="cvv" name="cvv"> <br>
+        
+        <hr>
+
+        <label for="memo">Memo <span>(Optional)</span></label> <br>
+        <textarea id="memo" name="memo"></textarea>
+
+        <hr>
+
+        <input type="submit" value="Continue to checkout">
+    </form>
+
+    © 2017–2022 Company Name <br>
+    <a href="privacy">Privacy</a> <a href="terms">Terms</a> <a href="support">Support</a>
+</body>
+</html>
+
+
