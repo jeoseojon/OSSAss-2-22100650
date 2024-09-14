@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <style>
+        input{
+            background-color: rgb(230,240,255);
+            height: 20px;
+        }
+        button{
+            color: white;
+            width: 75px;
+            height: 25px;
+        }
+        #add{
+            background-color: blue;
+        }
+        #del{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Web Page</h1>
+    <input type="text" id="contents"> <button id="add"><span>Add</span></button> <button id="del"><span>Delete</span></button>
+    <ul id="list"></ul>
+    <script>
+        const paragraph = document.getElementById("list");
+        const btn1 = document.getElementById("add").addEventListener("click", addText);
+        function addText(){  
+            let texts = document.getElementById("contents").value
+            if(texts == "") return;
+            if(texts.includes(",") == false){
+                let listItem = document.createElement("li");
+                listItem.textContent = texts;
+                paragraph.appendChild(listItem);
+            }else{
+                var texts_array = texts.split(',');
+                for(var i = 0; i < texts_array.length; i++) {
+                    if(texts_array[i] == "" || texts_array[i] == " ") continue;
+                    let listItem = document.createElement("li");
+                    listItem.textContent = texts_array[i];
+                    paragraph.appendChild(listItem);
+                }
+            }
+            contents.value = "";
+        }
+        const btn2 = document.getElementById("del").addEventListener("click", function(){list.innerHTML=""});
+    </script>
+</body>
+</html>
