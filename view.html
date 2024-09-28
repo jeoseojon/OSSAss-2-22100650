@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="my.css">
+    <title>View Student</title>
+    <script>
+        function getStudentInfo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const studentNumber = urlParams.get('studentNumber');
+            const address = urlParams.get('address');
+            const email = urlParams.get('email');
+            
+            document.getElementById('student-name').textContent = name;
+            document.getElementById('student-number').textContent = studentNumber;
+            document.getElementById('student-address').textContent = address;
+            document.getElementById('student-email').textContent = email;
+
+            document.getElementById('edit-btn').href = `edit.html`;
+            document.getElementById('delete-btn').onclick = function() {
+                if(confirm("학생을 삭제하시겠습니까?")) {
+                    alert("삭제되었습니다.");
+                    window.location.href = "index.html";
+                }
+            };
+        }
+
+        window.onload = getStudentInfo;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Student Details</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="student-details">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td id="student-name"></td>
+                        </tr>
+                        <tr>
+                            <th>Student Number</th>
+                            <td id="student-number"></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td id="student-address"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td id="student-email"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">List</a>
+                <a id="edit-btn" href="#" class="btn btn-warning">Edit</a>
+                <button id="delete-btn" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

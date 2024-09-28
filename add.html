@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="my.css">
+    <title>Add Student</title>
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const studentNumber = document.getElementById("student-number").value;
+            const address = document.getElementById("address").value;
+            const email = document.getElementById("email").value;
+
+            if (!name || !studentNumber || !address || !email) {
+                alert("모든 정보를 입력해야 합니다.");
+                return false;
+            }
+            return true;
+        }
+
+        function handleSubmit() {
+            alert("학생이 추가되었습니다.");
+            window.location.href = "index.html";
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form onsubmit="return validateForm() && handleSubmit()">
+              <div class="modal-header">
+                <h4 class="modal-title">Add Student</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Student Number</label>
+                  <input type="text" id="student-number" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Address</label>
+                  <textarea id="address" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="index.html"><input type="button" class="btn btn-default" value="Cancel"></a>
+                <input type="submit" class="btn btn-success" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

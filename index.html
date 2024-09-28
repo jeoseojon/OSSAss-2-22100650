@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="my.css">
+    <title>Students list</title>
+    <script>
+        function confirmDelete() {
+            if(confirm("학생을 삭제하시겠습니까?")) {
+                alert("삭제되었습니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Students list</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="add.html" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student Number</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jeon Seongjong</td>
+                        <td>22100650</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>jeon.seongjong@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Jeon%20Seongjong&studentNumber=22100650&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=jeon.seongjong@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kim Jiho</td>
+                        <td>22100651</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>kim.jiho@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Kim%20Jiho&studentNumber=22100651&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=kim.jiho@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Park Minji</td>
+                        <td>22100652</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>park.minji@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Park%20Minji&studentNumber=22100652&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=park.minji@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lee Hyunwoo</td>
+                        <td>22100653</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>lee.hyunwoo@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Lee%20Hyunwoo&studentNumber=22100653&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=lee.hyunwoo@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Choi Seojin</td>
+                        <td>22100654</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>choi.seojin@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Choi%20Seojin&studentNumber=22100654&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=choi.seojin@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Yoon Seungjae</td>
+                        <td>22100655</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>yoon.seungjae@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Yoon%20Seungjae&studentNumber=22100655&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=yoon.seungjae@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Seo Jisoo</td>
+                        <td>22100656</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>seo.jisoo@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Seo%20Jisoo&studentNumber=22100656&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=seo.jisoo@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Han Seungwoo</td>
+                        <td>22100657</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>han.seungwoo@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Han%20Seungwoo&studentNumber=22100657&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=han.seungwoo@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jung Wook</td>
+                        <td>22100658</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>jung.wook@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Jung%20Wook&studentNumber=22100658&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=jung.wook@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kim Eunha</td>
+                        <td>22100659</td>
+                        <td>558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea</td>
+                        <td>kim.eunha@handong.ac.kr</td>
+                        <td>
+                            <a href="view.html?name=Kim%20Eunha&studentNumber=22100659&address=558,%20Handong-ro,%20Heunghae-eup,%20Buk-gu,%20Pohang-si,%20Gyeongsangbuk-do,%20Republic%20of%20Korea&email=kim.eunha@handong.ac.kr" class="view">
+                                <i class="material-icons" data-toggle="tooltip" title="View">&#xE417;</i>
+                            </a>
+                            <a href="edit.html" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#" class="delete" onclick="return confirmDelete();"><div style="color: red"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></div></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
