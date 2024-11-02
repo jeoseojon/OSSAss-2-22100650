@@ -1,0 +1,74 @@
+{
+  "students": [
+    {
+      "name": "Jeon Seongjong",
+      "studentNumber": "22100650",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "jeon.seongjong@handong.ac.kr",
+      "id": "1"
+    },
+    {
+      "name": "Kim Jiho",
+      "studentNumber": "22100651",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "kim.jiho@handong.ac.kr",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Park Minji",
+      "studentNumber": "22100652",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "park.minji@handong.ac.kr"
+    },
+    {
+      "id": "4",
+      "name": "Lee Hyunwoo",
+      "studentNumber": "22100653",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "lee.hyunwoo@handong.ac.kr"
+    },
+    {
+      "id": "5",
+      "name": "Choi Seojin",
+      "studentNumber": "22100654",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "choi.seojin@handong.ac.kr"
+    },
+    {
+      "id": "6",
+      "name": "Yoon Seungjae",
+      "studentNumber": "22100655",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "yoon.seungjae@handong.ac.kr"
+    },
+    {
+      "id": "7",
+      "name": "Seo Jisoo",
+      "studentNumber": "22100656",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "seo.jisoo@handong.ac.kr"
+    },
+    {
+      "id": "8",
+      "name": "Han Seungwoo",
+      "studentNumber": "22100657",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "han.seungwoo@handong.ac.kr"
+    },
+    {
+      "id": "9",
+      "name": "Jung Wook",
+      "studentNumber": "22100658",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "jung.wook@handong.ac.kr"
+    },
+    {
+      "id": "10",
+      "name": "Kim Eunha",
+      "studentNumber": "22100659",
+      "address": "558, Handong-ro, Heunghae-eup, Buk-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+      "email": "kim.eunha@handong.ac.kr"
+    }
+  ]
+}
